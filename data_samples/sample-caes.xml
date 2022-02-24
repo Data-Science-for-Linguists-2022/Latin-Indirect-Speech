@@ -1,0 +1,55 @@
+<root>
+    <sentence id="63444" status="reviewed" presentation-after=" " indirect-type="AcI">
+        <token id="734889" form="perfacile" citation-part="1.2.2" lemma="perfacilis" part-of-speech="A-" morphology="-s---nap-i" head-id="734890" relation="xobj" presentation-before=" " presentation-after=" ">
+          <slash target-id="734898" relation="xsub" />
+        </token>
+        <token id="734890" form="esse" citation-part="1.2.2" lemma="sum" part-of-speech="V-" morphology="--pna----i" head-id="854742" relation="comp" presentation-after=", " />
+        <token id="734891" form="cum" citation-part="1.2.2" lemma="cum" part-of-speech="G-" morphology="---------n" head-id="734890" relation="adv" presentation-after=" " />
+        <token id="734892" form="virtute" citation-part="1.2.2" lemma="virtus" part-of-speech="Nb" morphology="-s---fb--i" head-id="734894" relation="obl" information-status="info_unannotatable" presentation-after=" " />
+        <token id="734893" form="omnibus" citation-part="1.2.2" lemma="omnis" part-of-speech="Px" morphology="-p---mb--i" head-id="734894" relation="obl" information-status="quant" presentation-after=" " />
+        <token id="1179200" empty-token-sort="P" citation-part="1.2.2" head-id="734894" relation="sub" antecedent-id="1179198" information-status="old" />
+        <token id="734894" form="praestarent" citation-part="1.2.2" lemma="praesto" part-of-speech="V-" morphology="3pisa----i" head-id="734891" relation="pred" presentation-after=", " />
+        <token id="734895" form="totius" citation-part="1.2.2" lemma="totus" part-of-speech="A-" morphology="-s---ngp-i" head-id="734896" relation="atr" presentation-after=" " />
+        <token id="734896" form="Galliae" citation-part="1.2.2" lemma="Gallia" part-of-speech="Ne" morphology="-s---fg--i" head-id="734897" relation="narg" antecedent-id="680720" information-status="old" presentation-after=" " />
+        <token id="734897" form="imperio" citation-part="1.2.2" lemma="imperium" part-of-speech="Nb" morphology="-s---nb--i" head-id="734898" relation="obl" information-status="new" presentation-after=" " />
+        <token id="1179199" empty-token-sort="P" citation-part="1.2.2" head-id="734898" relation="sub" antecedent-id="1179200" information-status="old" />
+        <token id="734898" form="potiri" citation-part="1.2.2" lemma="potior" part-of-speech="V-" morphology="--pnp----i" head-id="734890" relation="comp" presentation-after=". " />
+        <token id="854742" empty-token-sort="V" citation-part="1.2.2" relation="pred" />
+      </sentence>
+      <sentence id="52564" status="reviewed" indirect-type="AcI">
+        <token id="681016" form="Pro" citation-part="1.2.6" lemma="pro" part-of-speech="R-" morphology="---------n" head-id="681020" relation="adv" presentation-after=" " />
+        <token id="681017" form="multitudine" citation-part="1.2.6" lemma="multitudo" part-of-speech="Nb" morphology="-s---fb--i" head-id="681016" relation="obl" information-status="new" presentation-after=" " />
+        <token id="681018" form="autem" citation-part="1.2.6" lemma="autem" part-of-speech="Df" morphology="---------n" head-id="681030" relation="aux" presentation-after=" " />
+        <token id="681019" form="hominum" citation-part="1.2.6" lemma="homo" part-of-speech="Nb" morphology="-p---mg--i" head-id="681017" relation="part" antecedent-id="1179290" information-status="old" presentation-after=" " />
+        <token id="681020" form="et" citation-part="1.2.6" lemma="et" part-of-speech="C-" morphology="---------n" head-id="681029" relation="adv" presentation-after=" " />
+        <token id="681021" form="pro" citation-part="1.2.6" lemma="pro" part-of-speech="R-" morphology="---------n" head-id="681020" relation="adv" presentation-after=" " />
+        <token id="681022" form="gloria" citation-part="1.2.6" lemma="gloria" part-of-speech="Nb" morphology="-s---fb--i" head-id="681021" relation="obl" information-status="new" presentation-after=" " />
+        <token id="681023" form="belli" citation-part="1.2.6" lemma="bellum" part-of-speech="Nb" morphology="-s---ng--i" head-id="681024" relation="atr" information-status="kind" presentation-after=" " />
+        <token id="681024" form="atque" citation-part="1.2.6" lemma="atque" part-of-speech="C-" morphology="---------n" head-id="681022" relation="atr" presentation-after=" " />
+        <token id="681025" form="fortitudinis" citation-part="1.2.6" lemma="fortitudo" part-of-speech="Nb" morphology="-s---fg--i" head-id="681024" relation="atr" information-status="kind" presentation-after=" " />
+        <token id="681026" form="angustos" citation-part="1.2.6" lemma="angustus" part-of-speech="A-" morphology="-p---map-i" head-id="681028" relation="atr" presentation-after=" " />
+        <token id="681027" form="se" citation-part="1.2.6" lemma="se" part-of-speech="Pk" morphology="3p---qa--i" head-id="681029" relation="sub" antecedent-id="681019" information-status="old" presentation-after=" " />
+        <token id="681028" form="fines" citation-part="1.2.6" lemma="finis" part-of-speech="Nb" morphology="-p---ma--i" head-id="681029" relation="obj" antecedent-id="680827" information-status="old" presentation-after=" " />
+        <token id="681029" form="habere" citation-part="1.2.6" lemma="habeo" part-of-speech="V-" morphology="--pna----i" head-id="681030" relation="comp" presentation-after=" " />
+        <token id="1179197" empty-token-sort="P" citation-part="1.2.6" head-id="681030" relation="sub" antecedent-id="681027" information-status="old" />
+        <token id="681030" form="arbitrabantur" citation-part="1.2.6" lemma="arbitror" part-of-speech="V-" morphology="3piip----i" relation="pred" presentation-after=", " />
+        <token id="681031" form="qui" citation-part="1.2.6" lemma="qui" part-of-speech="Pr" morphology="-p---mn--i" head-id="733318" relation="sub" presentation-after=" " />
+        <token id="681032" form="in" citation-part="1.2.6" lemma="in" part-of-speech="R-" morphology="---------n" head-id="733318" relation="adv" presentation-after=" " />
+        <token id="681033" form="longitudinem" citation-part="1.2.6" lemma="longitudo" part-of-speech="Nb" morphology="-s---fa--i" head-id="681032" relation="obl" antecedent-id="681028" information-status="acc_inf" presentation-after=" " />
+        <token id="681034" form="milia" citation-part="1.2.6" lemma="mille" part-of-speech="Ma" morphology="-p---na--i" head-id="733318" relation="obl" information-status="info_unannotatable" presentation-after=" " />
+        <token id="681035" form="passuum" citation-part="1.2.6" lemma="passus" part-of-speech="Nb" morphology="-p---mg--i" head-id="681034" relation="part" information-status="info_unannotatable" presentation-after=" " />
+        <token id="681036" form="ducenta quadraginta" citation-part="1.2.6" lemma="ducenti quadraginta" part-of-speech="Ma" morphology="-p---na--i" head-id="681034" relation="atr" presentation-after=", " />
+        <token id="681037" form="in" citation-part="1.2.6" lemma="in" part-of-speech="R-" morphology="---------n" head-id="681040" relation="adv" presentation-after=" " />
+        <token id="681038" form="latitudinem" citation-part="1.2.6" lemma="latitudo" part-of-speech="Nb" morphology="-s---fa--i" head-id="681037" relation="obl" antecedent-id="681028" information-status="acc_inf" presentation-after=" " />
+        <token id="681039" form="centum octoginta" citation-part="1.2.6" lemma="centum octoginta" part-of-speech="Ma" morphology="---------n" head-id="681040" relation="obl" information-status="info_unannotatable" presentation-after=" ">
+          <slash target-id="681035" relation="part" />
+        </token>
+        <token id="681040" form="patebant" citation-part="1.2.6" lemma="pateo" part-of-speech="V-" morphology="3piia----i" head-id="733317" relation="apos" presentation-after=". ">
+          <slash target-id="681031" relation="sub" />
+        </token>
+        <token id="733317" empty-token-sort="C" citation-part="1.2.6" head-id="681028" relation="apos" />
+        <token id="733318" empty-token-sort="V" citation-part="1.2.6" head-id="733317" relation="apos">
+          <slash target-id="681040" relation="pid" />
+        </token>
+      </sentence>
+</root>
