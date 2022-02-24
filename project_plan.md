@@ -18,7 +18,7 @@ This is also the form that survives in modern Romance languages. For example: in
 "And God saw that it was good."
 
 ## Data
-For my data, I will use the PROIEL Treebank [3].
+For my data, I will use the PROIEL Treebank [3]. [Link](https://dev.syntacticus.org/proiel.html)
 It contains 6 Latin texts, 3 from the 1st century BCE and 3 from the 4th-5th centuries CE, covering 5 authors and 225,064 tokens.
 The data is already annotated with syntactic roles, parts of speech, and morphological information.
 I will, however, need to mark all instances of indirect speech.
