@@ -8,8 +8,6 @@ file_names = ['caes-gal.xml', 'cic-att.xml', 'cic-off.xml', 'latin-nt.xml', 'pal
 
 proiel_dir = '../../proiel-treebank/'
 
-root = et.Element('root')
-
 def is_infinitive(tok):
     return tok.get('part-of-speech') == 'V-' and tok.get('relation') == 'comp' and tok.get('morphology')[3] == 'n'
 
@@ -39,6 +37,7 @@ def print_sentence(sent, current_index, total):
 def auto_process():
     total_count = 0
     for file_name in file_names:
+        root = et.Element('root')
         count = 0
         etree = et.parse(proiel_dir + file_name)
         for sent in etree.iter('sentence'):
@@ -65,7 +64,8 @@ def manual_process():
     print_filenames()
     file_name = file_names[int(input("Which file? "))]
     current_index = int(input('Resumption number? '))
-
+    root = et.Element('root')
+    
     # If we are resuming, re-read the already-annotaed sentences
     if current_index > 0:
         root = et.parse(file_name).getroot()
