@@ -35,6 +35,8 @@ It uses one of the following conjunctions:
 * *quīn* - that (complementizer; in negated sentences of doubt, knowledge, etc.)
 
 followed by a subjunctive phrase.
+As can be seen from the definitions above, these conjunctions (except *quīn*) were not originally complementizers.
+As Latin evolved, their meaning weakened in certain constructions, leading to their use for indirect speech.
 
 We could rewrite our accusative + infinitive sentence above as *Videō quia trāns flūmen sint lupī*.
 Notice that the only change from the independent form is that the verb is now in its subjunctive form.
