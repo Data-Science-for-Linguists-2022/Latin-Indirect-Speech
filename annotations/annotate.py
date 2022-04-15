@@ -11,6 +11,9 @@ proiel_dir = '../../proiel-treebank/'
 def is_infinitive(tok):
     return tok.get('part-of-speech') == 'V-' and tok.get('relation') == 'comp' and tok.get('morphology')[3] == 'n'
 
+def is_main_verb(tok):
+    return tok.get('part-of-speech') == 'V-' and tok.get('relation') == 'pred'
+
 def is_subordinator(tok):
     return tok.get('part-of-speech') == 'G-' and tok.get('relation') == 'comp' and tok.get('form') in subordinators
 
@@ -40,8 +43,21 @@ def auto_process():
         root = et.Element('root')
         count = 0
         etree = et.parse(proiel_dir + file_name)
+        # Create a dictionary storing morphology
+        morph_tags = {}
+        for morph in etree.iter('morphology'):
+            for field in morph.iter('field'):
+                create = True
+                for value in field.iter('value'):
+                    if create:
+                        morph_tags[field.get('tag')] = {}
+                        create = False
+                    morph_tags[field.get('tag')][value.get('tag')] = value.get('summary')
+                morph_tags[field.get('tag')]['-'] = 'N/A' # For inapplicable values
+
         for sent in etree.iter('sentence'):
             already_added = False
+            get_sub_info = False
             for tok in sent.iter('token'):
                 if not already_added and (is_infinitive(tok) or is_subordinator(tok)):
                     already_added = True
@@ -50,7 +66,20 @@ def auto_process():
                         sent.set('indirect-type', 'AcI')
                     elif is_subordinator(tok):
                         sent.set('indirect-type', tok.get('form'))
+                        get_sub_info = True
+                    sent.set('indirect-lemma', tok.get('lemma'))
+                    sent.set('indirect-tense', morph_tags['tense'][tok.get('morphology')[2]])
+                    sent.set('indirect-mood', morph_tags['mood'][tok.get('morphology')[3]])
+                    sent.set('indirect-voice', morph_tags['voice'][tok.get('morphology')[4]])
+                    if not get_sub_info:
+                        root.append(sent)
+                if get_sub_info and is_main_verb(tok):
+                    sent.set('indirect-lemma', tok.get('lemma'))
+                    sent.set('indirect-tense', morph_tags['tense'][tok.get('morphology')[2]])
+                    sent.set('indirect-mood', morph_tags['mood'][tok.get('morphology')[3]])
+                    sent.set('indirect-voice', morph_tags['voice'][tok.get('morphology')[4]])
                     root.append(sent)
+                    break
 
         with open(file_name, 'wb') as file:
             file.write(et.tostring(root))
