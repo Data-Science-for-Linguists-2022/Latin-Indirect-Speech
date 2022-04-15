@@ -4,7 +4,7 @@
 Created repo, added all startup files, downloaded PROIEL Treebank corpus.
 
 ## 1st Progress Report
-I wrote a Python script to gather the type of sentence I'm looking for, [/annotations/annotate.py].
+I wrote a Python script to gather the type of sentence I'm looking for, [annotations/annotate.py].
 Right now, it may ignore some types of sentence (those involving the XOBJ and XADV syntactic relations),
 but it gets a majority of what I need.
 (I will update the code to account for the missing sentences.)
@@ -37,3 +37,9 @@ I'll need to look into this further, as it may taint the data (since it is not n
 In addition, I added an [introduction to indirect speech](oo_introduction.md), since understanding the construction and how
 it works is important to understanding the project.
 I also updated README.md with some links to important files within the project.
+
+## 3rd Progress Report
+I added to my data information on the main verb in the indirect speech clauses, namely the lemma, tense, mood, and voice.
+I then performed various analyses on these, such as seeing how the correlate with author, era, and construction type.
+I fixed a little error in the README and expanded it to include more info about the project.
+I still need to create a presentation, and look into the "Jerome problem".
