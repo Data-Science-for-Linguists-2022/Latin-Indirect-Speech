@@ -1,4 +1,5 @@
-# Latin-Indirect-Speech - Ben Miller
+# Latin-Indirect-Speech
+Ben Miller (bam197@pitt.edu)
 Analysis of indirect speech use in Latin
 
 # Overview
@@ -14,9 +15,15 @@ The texts used are as follows:
 * *Peregrinatio Aetheriae*
 * Rutilius Taurus Aemilianus Palladius - *Opus agriculturae*
 
-## Structure
+## Directory
+* [**Final report**](final_report.md)
 * [The project plan](project_plan.md)
+* [The annotator script](annotations/annotate.py)
 * [Progress reports](progress_report.md)
 * [An introduction to indirect speech](oo_introduction.md)
+* [A sample of the data](data_samples/sample-caes.xml)
 * [Overview of the data](notebooks/overview.ipynb)
 * [The analysis](notebooks/Analysis.ipynb)
+* [Presentation files](presentation/)
+* [Graphics and Images](presentation/graphs/)
+* [Guestbook (External)](https://github.com/Data-Science-for-Linguists-2022/Class-Lounge/blob/main/guestbooks/guestbook_ben.md)
