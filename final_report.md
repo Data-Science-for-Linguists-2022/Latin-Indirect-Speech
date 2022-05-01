@@ -8,6 +8,7 @@ In this final report, I will go over the history of the project and give the fin
 I chose this project topic as I have an interest in historical linguistics and languages.
 I felt the corpus I found, the PROIEL Treebank, would be suitable for examining potential change throughout Latin's history,
 as it contains both early (1st century BCE) and later (4th-5th century CE) texts.
+Additionally, the amount of texts in each era was the same (3 each).
 
 I settled on looking at indirect speech as I remembered having encountered a complementizer while trying to read a later Latin text,
 and being puzzled by it, since I was more familiar with the accusative + infinitive construction.
@@ -27,8 +28,21 @@ There were simply too many possible sentences, and my Latin was not good enough 
 Luckily, I found that the PROIEL Treebank encoded the necessary syntactic information to extract the sentences I needed.
 I simply had to find infinitives and conjunctions with the syntactic role 'complementizer'.
 I also collected information on the main verb, as well as morphological information on the verb in the subclause.
-I then added it as XML attributes on the sentence tag, and saved it.
+I then added it as XML attributes on the sentence tag, and saved all sentences as an XML file.
+The script does this for each text seperately.
+
 It was then a simple task of parsing out the relevant information from my new XML files and placing it in a pandas dataframe, seen [here](https://nbviewer.org/github/Data-Science-for-Linguists-2022/Latin-Indirect-Speech/blob/main/notebooks/Analysis.ipynb#Imports).
+The columns of the dataframe were:
+* ID (of the sentence; assigned by PROIEL Treebank)
+* File name
+* Author
+* Era (Classical or Late)
+* Type (of construction)
+* Lemma (of the verb)
+* Tense
+* Mood
+* Voice
+* Text (of the sentence)
 
 ## Analysis
 
@@ -45,7 +59,10 @@ As can be seen above, the accusative + infinitive construction was the most comm
 ![png](presentation/graphs/type_by_era.png)
 
 Honing in on the difference by era, the complementizer constructions show an increase in Late texts.
+The accusative + infinitive construction, though showing a decrease in frequency compared to the
+complementizer constructions, is still used.
 This graph also reveals that *quīn* is restricted to the Classical text.
+*Quīn* is rather restricted in occurence, usually only in negative sentences, so it makes sense it would be the least frequent.
 
 ### Type by author
 
@@ -54,9 +71,9 @@ This graph also reveals that *quīn* is restricted to the Classical text.
 Jerome has the most complementizers; much more than his fellow Late authors.
 I did some research into this, and found that Jerome was known for preserving the syntax and constructions of the languages from which he translated;
 furthermore, Koine Greek, the original language of the New Testament, has complementizers.
-It is therefore possible that his data may not indicate a wholly-Latin development, but is rather the result of Jerome's translation methods.
+It is therefore possible that his data may not indicate a wholly-Latin development, but rather the result of Jerome's translation methods.
 
-I then decided to look into how morphological categories like tense, voice, and mood differed between different constructions.
+I then decided to look into how morphological categories like tense, voice, and mood differed between constructions.
 
 ### Voice by type
 
@@ -125,4 +142,5 @@ and occasionally the subjunctive (typically after verbs of feeling, doubt, oblig
 One potential avenue of further research could be to look at Medieval Latin as well.
 Since many Medieval Latin authors were speakers of (usually seldom-written) Romance languages,
 their Latin may show influence from their native language, allowing this shift to be traced beyond the 5th century.
-However, there would be the challenge of finding an annotated Medieval corpus, as I would be unable to do the annotation myself.
+However, there would be the challenge of finding an annotated Medieval corpus, as I would be unable to do the annotation myself,
+as well as the downside that it would no longer reflect the Latin of native speakers.
